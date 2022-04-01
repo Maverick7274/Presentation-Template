@@ -158,3 +158,24 @@ a
         transform: translateX(0);
     }
 }
+
+
+@media screen and (max-width:768px)
+{
+        .page h1
+    {
+        font-size: 2rem;
+    }
+
+    .page p
+    {
+        margin: 0.5rem;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .btn
+    {
+        padding: 0.7rem 1.5rem;
+    }
+}
