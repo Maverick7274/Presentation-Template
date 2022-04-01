@@ -7,19 +7,25 @@
     <link rel="stylesheet" href="/CSS/mobile.css">
     <link rel="stylesheet" href="/CSS/utility.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="shortcut icon" href="/Images/favicon_1.ico" type="image/x-icon" id="favicon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentation</title>
 </head>
 <body>
     
     <!-- Cover Page -->
-    <section id="coverpage page" class="page">
+    <section id="coverpage" class="page" onclick="toNextColor()">
         <h1>
             Welcome to my Presentation
         </h1>
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ipsa dignissimos voluptas facere necessitatibus commodi, velit molestias vitae porro odit, cupiditate maxime distinctio reprehenderit incidunt eligendi, ipsum autem. Quas, nobis fugit. Veniam earum praesentium iusto dolorum. Ad tenetur pariatur quidem.
         </p>
+        <div class="initials">
+            <h4>
+                Made By Neelanjan Mukherji
+            </h4>
+        </div>
         <div>
             <a href="#page1" class="btn">
                 Next Page <i class="fas fa-arrow-circle-down"></i>
@@ -28,7 +34,7 @@
     </section>
 
     <!-- Page 1 -->
-    <section id="page page1" class="page">
+    <section id="page1" class="page">
         <h1>
             Page 1
         </h1>
@@ -36,17 +42,17 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ipsa dignissimos voluptas facere necessitatibus commodi, velit molestias vitae porro odit, cupiditate maxime distinctio reprehenderit incidunt eligendi, ipsum autem. Quas, nobis fugit. Veniam earum praesentium iusto dolorum. Ad tenetur pariatur quidem.
         </p>
         <div>
-            <a href="#coverpage" class="btn">
+            <a href="#coverpage" class="btn btn-primary">
                 Previous Page <i class="fas fa-arrow-circle-up"></i>
             </a>
-            <a href="#page2" class="btn">
+            <a href="#page2" class="btn btn-supplementary">
                 Next Page <i class="fas fa-arrow-circle-down"></i>
             </a>
         </div>
     </section>
 
     <!-- Page 2-->
-    <section id="page page2" class="page">
+    <section id="page2" class="page">
         <h1>
             Page 2
         </h1>
@@ -54,17 +60,17 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ipsa dignissimos voluptas facere necessitatibus commodi, velit molestias vitae porro odit, cupiditate maxime distinctio reprehenderit incidunt eligendi, ipsum autem. Quas, nobis fugit. Veniam earum praesentium iusto dolorum. Ad tenetur pariatur quidem.
         </p>
         <div>
-            <a href="#page2" class="btn">
+            <a href="#page1" class="btn btn-primary">
                 Previous Page <i class="fas fa-arrow-circle-up"></i>
             </a>
-            <a href="#page3" class="btn">
+            <a href="#page3" class="btn btn-primary">
                 Next Page <i class="fas fa-arrow-circle-down"></i>
             </a>
         </div>
     </section>
 
     <!-- Page 3-->
-    <section id="page page3" class="page">
+    <section id="page3" class="page">
         <h1>
             Page 3
         </h1>
@@ -72,14 +78,33 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ipsa dignissimos voluptas facere necessitatibus commodi, velit molestias vitae porro odit, cupiditate maxime distinctio reprehenderit incidunt eligendi, ipsum autem. Quas, nobis fugit. Veniam earum praesentium iusto dolorum. Ad tenetur pariatur quidem.
         </p>
         <div>
-            <a href="#page2" class="btn">
+            <a href="#page2" class="btn btn-primary">
                 Previous Page <i class="fas fa-arrow-circle-up"></i>
             </a>
-            <a href="#page4" class="btn">
+            <a href="#page4" class="btn btn-secondary btn-supplementary">
                 Next Page <i class="fas fa-arrow-circle-down"></i>
             </a>
         </div>
     </section>
 
+    <!-- Page 4-->
+    <section id="page4" class="page">
+        <h1>
+            Page 4
+        </h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ipsa dignissimos voluptas facere necessitatibus commodi, velit molestias vitae porro odit, cupiditate maxime distinctio reprehenderit incidunt eligendi, ipsum autem. Quas, nobis fugit. Veniam earum praesentium iusto dolorum. Ad tenetur pariatur quidem.
+        </p>
+        <div>
+            <a href="#page2" class="btn btn-supplementary">
+                Previous Page <i class="fas fa-arrow-circle-up"></i>
+            </a>
+            <a href="#coverpage" class="btn">
+                Go to Cover Page <i class="fas fa-arrow-circle-up"></i>
+            </a>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/JavaScript/app.js"></script>
 </body>
 </html>

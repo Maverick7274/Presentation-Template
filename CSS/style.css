@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root
+{
+    --background-color : #122844;
+    --supplementary-color : #010319;
+    --supplementary-color1 : #e5ebeb;
+    --supplementary-color2 : #00b3a7;
+    --supplementary-color3 : #8317f8;
+    --supplementary-color4 : #282394;
+    --supplementary-color5 : #f2d004;
+    --supplementary-color6 : #b4fafb;
+    --animate-speed: 2s;
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.8;
+    overflow: hidden;
+    color: var(--supplementary-color1);
+}
+
+/* Page Colors */
+
+#coverpage {background: var(--background-color);}
+#page1 {background: var(--supplementary-color2);}
+#page2 {background: var(--supplementary-color6);
+                        color: var(--supplementary-color);}
+#page3 {background: var(--supplementary-color3);}
+#page4 {background: var(--supplementary-color4);}
+
+
+
+.page
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 4rem;
+}
+
+.page h1
+{
+    font-size: 4rem;
+    line-height: 1.2;
+    margin: 1rem;
+}
+
+
+.page p
+{
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin: 1rem;
+}
+
+.initials h4
+{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.btn
+{
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 0.9rem;
+    background: var(--supplementary-color2);
+    border-radius: 0.4rem;
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover
+{
+    transition: all var(--animate-speed);
+    background: var(--supplementary-color3);
+}
+
+a
+{
+    color: var(--supplementary-color1);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary
+{
+    background: var(--background-color);
+}
+
+.btn-primary:hover
+{
+    transition: all var(--animate-speed);
+    background: var(--supplementary-color4);
+}
+
+.btn-secondary
+{
+    background: var(--supplementary-color6);
+}
+.btn-secondary:hover
+{    
+    transition: all var(--animate-speed);
+    background: var(--supplementary-color2);
+    color: var(--supplementary-color);
+}
+
+.btn-supplementary
+{
+    background: var(--supplementary-color);
+}
+.btn-supplementary:hover
+{    
+    transition: all var(--animate-speed);
+    background: var(--supplementary-color5);
+    color: var(--supplementary-color);
+}
+
+/* Page Animation */
+
+#coverpage h1
+{
+    transform: translateY(-1200px);
+    animation: heading var(--animate-speed) forwards ease-in;
+}
+
+#coverpage p
+{
+    transform: translateX(-1800px);
+    animation: text var(--animate-speed) forwards ease-in 1s;
+}
+
+@keyframes heading 
+{
+    to
+    {
+        transform: translateY(0);
+    }
+}
+
+@keyframes text 
+{
+    to
+    {
+        transform: translateX(0);
+    }
+}
